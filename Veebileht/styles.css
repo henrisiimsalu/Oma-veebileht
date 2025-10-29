@@ -47,8 +47,7 @@ nav a:hover {
    ======================= */
 #avaleht {
   min-height: 100vh;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.9)),
     url("background.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -112,7 +111,8 @@ section {
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
 }
 
-h2, h3 {
+h2,
+h3 {
   color: #ff2b2b;
   text-transform: uppercase;
   border-left: 4px solid #ff2b2b;
@@ -155,13 +155,87 @@ p {
 /* =======================
    JALUS
    ======================= */
-footer {
-  text-align: center;
-  padding: 1rem 0;
+.footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 3rem 1rem 1rem;
   border-top: 2px solid #ff2b2b;
-  background-color: #111;
-  color: #ff2b2b;
+  font-size: 0.95rem;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #fff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer-section p {
+  color: #aaa;
+  margin: 0.3rem 0;
+}
+
+.footer-section a {
+  color: #ff2b2b;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #ff2b2b;
+}
+
+/* sotsiaalmeedia ikoonid */
+.social-links {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 1.1rem;
+  color: #ff2b2b;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #ff2b2b;
+  color: #000;
+  box-shadow: 0 0 10px #ff2b2b;
+}
+
+/* alumine copyright rida */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 0, 0, 0.2);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  color: #777;
+  font-size: 0.85rem;
+}
+
 /* =======================
    VIIDE PILDI ALL
    ======================= */
@@ -194,8 +268,45 @@ footer {
   color: #fff;
   text-shadow: 0 0 8px #ff2b2b;
 }
+#statistika {
+  background-color: #111;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+}
 
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 
+.stat-box {
+  flex: 1;
+  min-width: 180px;
+}
+
+.stat-icon {
+  font-size: 2.2rem;
+  color: #ff2b2b;
+  margin-bottom: 0.5rem;
+}
+
+.stat-box h3 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.stat-box p {
+  color: #ccc;
+  font-size: 1rem;
+}
 /* =======================
    VÄIKSEMAD EKRAANID
    ======================= */
@@ -215,5 +326,10 @@ footer {
   }
   #avaleht h3 {
     font-size: 1.2rem;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
