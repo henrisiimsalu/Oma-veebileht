@@ -7,6 +7,10 @@ body {
   line-height: 1.6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
